@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{grid-area: myhome;}
+        .projects{grid-area: myprojects;}
+        .gallery{grid-area: mygallery;}
+        .contact{grid-area: mycontact;}
+        .about{grid-area: myabout;}
+
+        .maindiv{
+            display:grid;
+            grid-template-areas:
+            'myhome myhome myhome myhome myhome myhome'
+            'myprojects myprojects myprojects mygallery mygallery mygallery'
+            'myprojects myprojects myprojects mygallery mygallery mygallery'
+            'myabout myabout mycontact mycontact mycontact mycontact';
+            background-color: aquamarine;
+        }
+
+        .maindiv > div{
+            background-color: teal;
+            padding:10px;
+            margin:20px;
+            color:white;
+            font-size:larger;
+            border-radius:10px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <h1>Hello!!</h1>
+    </div>
+
+    <div class="maindiv">
+        <div class="home">Home</div>
+        <div class="projects">Projects</div>
+        <div class="gallery">Gallery</div>
+        <div class="contact">Contact Us</div>
+        <div class="about">About Us</div>
+    </div>
+</body>
+</html>
