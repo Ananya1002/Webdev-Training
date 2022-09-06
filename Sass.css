@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+  font-size: -10;
+}
+
+#maindiv {
+  background-color: aquamarine;
+}
+#maindiv h1 {
+  color: black;
+}
+#maindiv #mydiv {
+  background-color: bisque;
+}
+#maindiv #mydiv h2 {
+  color: royalblue;
+}/*# sourceMappingURL=Sass.css.map */
