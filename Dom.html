@@ -1,0 +1,75 @@
+<!--Dom stands for document object model  prelined structure-->
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #mybox{
+            background-color: aquamarine;
+            width:400px;
+            height: 200px;
+            border-radius: 20px;
+             
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+    <h1 id="myid">
+        Hello Me
+    </h1>
+    <h2>
+        Hii!
+    </h2>
+    <div id="mybox">
+
+    </div>
+    <br><br>
+
+   <!--<h1 class="myclass">WELCOME</h1>
+    <h1 class="myclass">WELCOME</h1>
+    <button onclick="greet()">Click Me to Display Message</button>
+    <script>
+        function greet(){
+            
+            document.getElementById("myid").innerHTML="This is a text changed from DOM"
+            document.getElementsByTagName("h2")[0].innerHTML="This is the second one"
+            document.getElementsByClassName("myclass")[1].innerHTML="Hiiiiii"
+        }
+        greet()
+    </script>-->
+
+</div>  
+<button onclick="changebg() ">Click Me to Display Message</button>
+<button onmouseleave="greet()">Click Me</button>
+<script>
+    function greet(){
+        document.getElementById("myid").innerHTML="This is the new text"
+    }
+    function changebg(){
+        var r=Math.floor(Math.random()*255)
+        var g=Math.floor(Math.random()*255)
+        var b=Math.floor(Math.random()*255)
+        var mycolor="rgb(" +r+","+g+","+b+")"
+        console.log(r)
+         document.getElementById("mybox").style.background=mycolor
+         document.getElementsByTagName("body").css.background=mycolor
+    }
+    changebg();
+
+    class Laptop{
+        constructor(name,model){
+            this.name=name;
+            this.model=model;
+        }
+    }
+    const mylaptop=new Laptop("MSI",2022);
+    console.log(mylaptop.model)
+
+   
+</script>
+</body>
+</html>

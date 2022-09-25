@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+   <div align="center">
+    <h1>Welcome</h1>
+    <br><br>
+    <button>Click Me!!</button>
+
+    <!--traversing-->
+
+    <ul class="level-1">
+        <li class="item-1">1</li>
+        <li class="item-2">2
+            <ul class="level-2">
+                <li class="item-a">A</li>
+                <li class="item-b">B
+                <ul class="level-3">
+                    <li class="item-1">I</li>
+                    <li class="item-2">II</li>
+                    <li class="item-3">III</li>
+            </ul>
+        </li>
+        <li class="item-c">C</li>
+        </ul>
+        </li>
+        <li class ="item-3">3</li>
+    </ul>
+   </div> 
+   
+   <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("h1").slideToggle();
+        })
+    })
+
+    $("ul/level-2").children().css("background-color","red");
+   </script>
+</body>
+</html>

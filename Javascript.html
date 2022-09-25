@@ -21,8 +21,8 @@
             console.log(num2)
 
             var sum=num1 +num2
-            console.log("The sum of 2 numbers is "+sum)
-            document.write("The sum of 2 nums is"+sum)
+            console.log("The sum of 2 numbers is "+sum)//to display on the console
+            document.write("The sum of 2 nums is"+sum) //to display on the web page
 
             var flag=true
             console.log(flag)
@@ -42,6 +42,49 @@
             console.log(name)
             alert("Thank you")
 
+            num1=10
+            num2=90
+            sum=num1%num2
+            console.log("The modulus of two numbers is " +sum)
+
+            num3=30
+            num3++
+            num3--
+            console.log(num3)
+
+
+
+
+            //class 10 functions and subfunctions in js
+            function student(){
+                console.log("Very gd evening")
+            }
+
+            function greet(name){
+                console.log("WELCOME " + name)
+                console.log("This is a funtion")
+                student()
+            }
+            greet("Ananya") 
+            
+            function add(num1,num2){
+              console.log(num1+num2)
+            }
+            add(2,3)
+
+            var username=prompt("Enter the username")
+            var password=prompt("Enter the password")
+
+            if(username=="Ananya"&& password=="password"){
+                console.log("The cridentials are correct")
+            }
+            else{
+                console.log("The cridentials are wrong")
+            }
+
+            for(let i=0;i<10;i++){
+                console.log("The count value is "+ i)
+            }
         </script>
     </div>
 </body>
